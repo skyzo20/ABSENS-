@@ -5,7 +5,7 @@ import Dashboard from './components/Dashboard';
 import { auth } from './firebase';
 
 const ADMIN_EMAILS = [
-  ''
+  'kamal@gmail.com'
 ];
 
 function App() {
