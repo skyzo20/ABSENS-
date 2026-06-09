@@ -3,9 +3,10 @@ import './App.css';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import { auth } from './firebase';
+import { onAuthStateChanged } from 'firebase/auth';
 
 const ADMIN_EMAILS = [
-  'kamal@gmail.com'
+  'pasopati@tomoro.com'
 ];
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((user) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
       setIsAdmin(user ? ADMIN_EMAILS.includes(user.email) : false);
     });
