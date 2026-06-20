@@ -107,11 +107,15 @@ function History({ user, isAdmin }) {
                           </span>
                         </div>
                         <div className="entry-photo">
-                          <img
-                            src={entry.photo}
-                            alt={`Attendance photo ${entry.action}`}
-                            className="thumb-absen"
-                          />
+                          {entry.photo ? (
+                            <img
+                              src={entry.photo}
+                              alt={`${entry.action} attendance`}
+                              className="thumb-absen"
+                            />
+                          ) : (
+                            <div className="photo-placeholder">Tidak ada foto</div>
+                          )}
                         </div>
                       </div>
                     ))}
