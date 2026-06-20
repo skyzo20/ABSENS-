@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ABSENS-NEW/static/css/main.df9a16ce.css",
+    "main.js": "/ABSENS-NEW/static/js/main.3795b147.js",
+    "index.html": "/ABSENS-NEW/index.html",
+    "main.df9a16ce.css.map": "/ABSENS-NEW/static/css/main.df9a16ce.css.map",
+    "main.3795b147.js.map": "/ABSENS-NEW/static/js/main.3795b147.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df9a16ce.css",
+    "static/js/main.3795b147.js"
+  ]
+}
